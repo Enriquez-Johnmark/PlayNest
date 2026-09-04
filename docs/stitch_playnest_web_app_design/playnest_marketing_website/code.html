@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#004f57","on-error":"#ffffff","on-secondary-fixed":"#0f1e1e","surface-base":"#FCFAF7","on-surface":"#231a15","semantic-info":"#2984DF","error":"#ba1a1a","on-secondary-fixed-variant":"#3a4a49","accent-sunshine":"#FDF1D0","inverse-on-surface":"#ffede6","secondary-fixed-dim":"#b9cac9","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary":"#ffffff","on-secondary-container":"#586767","secondary-fixed":"#d5e6e5","on-tertiary-fixed":"#001f23","tertiary":"#006670","tertiary-container":"#00818d","muted-surface":"#F6F3F0","on-primary-fixed":"#3e0500","tertiary-fixed":"#92f1ff","inverse-primary":"#ffb4a4","on-primary":"#ffffff","error-container":"#ffdad6","surface-card":"#FFFFFF","outline":"#8d716b","muted-text":"#7C736E","semantic-warning":"#F59E0B","surface-container-lowest":"#ffffff","surface-container":"#fdeae2","tertiary-fixed-dim":"#63d6e6","outline-variant":"#e1bfb8","on-background":"#231a15","on-primary-container":"#fffbff","border-subtle":"#EBE4DE","on-tertiary-container":"#f7feff","on-surface-variant":"#59413c","primary-fixed-dim":"#ffb4a4","primary-container":"#cd462c","secondary":"#526161","on-primary-fixed-variant":"#8c1802","surface-variant":"#f1dfd7","accent-sunshine-foreground":"#764D18","inverse-surface":"#392e29","surface-bright":"#fff8f6","semantic-success":"#33A364","surface-container-highest":"#f1dfd7","surface":"#fff8f6","surface-tint":"#ae3118","semantic-destructive":"#DC3535","secondary-container":"#d5e6e5","primary":"#ab2e16","background":"#fff8f6","surface-dim":"#e9d6ce","surface-container-low":"#fff1eb","secondary-foreground":"#215956","primary-fixed":"#ffdad3","surface-container-high":"#f7e4dc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-6":"1.5rem","space-10":"2.5rem","space-8":"2rem","space-4":"1rem","space-3":"0.75rem","space-5":"1.25rem","space-1":"0.25rem","space-2":"0.5rem"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,33,28,0.04)]"><div class="h-20 max-w-7xl mx-auto px-space-6 flex items-center justify-between"><div class="flex items-center gap-space-4"><a class="flex items-center gap-space-3" href="#"><img alt="PlayNest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNKXejZTNuIkQS3ukkAhv0lF5PfNAaF7_F8g1eqJE7c5dXCmOLVOOhkgtnau8DMmB_n384_j4qUzSDHSQ1wcm_4sYBu-egs-2OMPRq8aFOpFnJihAd6NfOo3HryklptcmTWTKN3vjunxgN6jJLUD2pJTwjHPPb7q13Ds8YHWnhMcC4Q7iLsHD2n8ri7u_1B7IODfq-T8OwkR7OP55t7P1lQfSJo9HXTvlMO-c34vJDFuG1xrDJSkS5OUE"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface leading-none tracking-tight">PlayNest</span><span class="font-label-sm text-label-sm text-muted-text mt-0.5 tracking-wide">Play. Learn. Grow.</span></div></a></div><nav class="hidden md:flex items-center gap-space-8" data-active-classes="text-primary font-semibold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="programs" href="#programs">Programs</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule" href="#schedule">Schedule</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="benefits" href="#benefits">Benefits</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing" href="#pricing">Pricing</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#faq">FAQ</a></nav><div class="flex items-center gap-space-4"><a class="hidden sm:inline-flex items-center justify-center px-space-5 py-space-2 bg-primary text-on-primary font-label-lg text-label-lg rounded-full shadow-[0_1px_3px_rgba(43,33,28,0.08)] hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-[0.98]" href="#programs">Explore Programs</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface py-space-8 md:py-space-10 lg:py-16">
+<div class="max-w-7xl mx-auto px-space-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-8 lg:gap-space-10 items-center">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-2 px-space-3 py-space-1 rounded-full bg-secondary-container text-secondary-foreground mb-space-4">
+<span class="material-symbols-outlined text-[16px] text-tertiary">nest_clock_farsight_analog</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Carefully Curated Early Learning</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg sm:text-[36px] sm:leading-[44px] lg:text-[44px] lg:leading-[52px] font-bold text-on-surface tracking-tight mb-space-4">
+            Where Kids Play, <span class="text-primary">Learn</span> &amp; <span class="text-tertiary">Grow</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-6">
+            Fun, active, and engaging experiences designed for growing kids. Thoughtfully structured for calm exploration, motor milestones, and creative confidence.
+          </p>
+<!-- Primary CTA & Action Pair -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-4 w-full sm:w-auto mb-space-6">
+<a class="inline-flex items-center justify-center px-space-6 py-space-3 bg-primary text-on-primary font-headline-sm text-headline-sm rounded-full shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-[0.98]" href="#programs">
+              Explore Programs
+              <span class="material-symbols-outlined ml-space-2 text-[20px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center px-space-5 py-space-3 bg-secondary-container text-secondary-foreground font-label-lg text-label-lg rounded-full hover:bg-secondary-fixed-dim transition-all" href="#schedule">
+<span class="material-symbols-outlined mr-space-2 text-[18px]">calendar_month</span>
+              View Sample Timetable
+            </a>
+</div>
+<!-- Honest App Demo Notice -->
+<div class="w-full max-w-lg p-space-4 rounded-xl bg-surface-container-low shadow-sm flex items-start gap-space-3">
+<span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5 shrink-0">smartphone</span>
+<p class="font-label-md text-label-md text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface font-semibold">Mobile Experience Notice:</strong> Bookings are managed via the PlayNest mobile app. Browse programs below or evaluate our interactive mobile demo flow.
+            </p>
+</div>
+</div>
+<!-- Right Hero Visual Collage -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full h-[400px] sm:h-[460px] rounded-3xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Delighted toddler discovering tactile soft wooden blocks and colorful sensory balance toys in a serene sun-drenched Scandinavian play studio with soft coral and muted mint accents, joyful candid expression, warm morning natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy0A17Q-odLHRtAkaotg-W0TTv3Y33u9-Ifet2OLZhI594jBiqFzIiRPM3jEEWCBsFVgnTN6_thHXD_zIgtp3_yTL-naMWccnPSAMoco7B1ZrotirgPZbIf5FXiRoaj-g8MEZd2ccRT5eGhnuJBagTp5XF5YCWArFtUlyRrfq-j9b94d5kkyVpyaYswjxqdxi2xzRieDZLLLvUVhse4cF9r1NXBEyyxFEDSpqy1w4WAAQ-lAMBBwBT"/>
+<!-- Float Badges -->
+<div class="absolute top-space-4 left-space-4 bg-surface-card/95 backdrop-blur-md px-space-3 py-space-2 rounded-xl shadow-md flex items-center gap-space-2">
+<span class="w-2.5 h-2.5 rounded-full bg-semantic-success animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Safe Tactile Play Spaces</span>
+</div>
+<div class="absolute bottom-space-4 right-space-4 bg-accent-sunshine px-space-4 py-space-2 rounded-xl shadow-lg flex items-center gap-space-2">
+<span class="material-symbols-outlined text-accent-sunshine-foreground text-[18px]">child_care</span>
+<span class="font-label-sm text-label-sm text-accent-sunshine-foreground font-semibold">Ages 1 to 10 Years</span>
+</div>
+</div>
+<!-- Decorative mini accent card -->
+<div class="hidden sm:flex absolute -bottom-space-5 -left-space-5 p-space-4 rounded-2xl bg-surface-card shadow-lg flex-col gap-1 w-48">
+<span class="font-label-sm text-label-sm text-muted-text uppercase font-semibold tracking-wider">Play Ratio</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1:5 Facilitator</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Intimate, calm guidance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: PROGRAMS (#programs) -->
+<section class="w-full py-space-10 bg-surface-base" id="programs">
+<div class="max-w-7xl mx-auto px-space-6">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-8 gap-space-4">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary font-bold">Developmental Journeys</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-1">Early Learning &amp; Play Programs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2 max-w-xl">
+            Each program is crafted with pediatric growth milestones in mind. Designed with peaceful pacing, rich sensory variety, and caring small-group supervision.
+          </p>
+</div>
+<div class="flex items-center gap-space-2 bg-surface-card px-space-3 py-space-2 rounded-full shadow-sm text-muted-text font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span>
+<span>PlayNest Activity Center</span>
+</div>
+</div>
+<!-- 4 Program Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-6">
+<!-- Program 1 -->
+<div class="flex flex-col h-full bg-surface-card rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Gentle toddler and caregiver exploring tactile silicone and organic wooden toys during an early development movement circle in a bright clean play area with warm peach and mint soft floor mats." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeSKe3O6eZ66Jb-glO2J7AXnYzhD16_fQVZOQZJtTP6DN7oNEeCKXTmztGXr5QhW5PDiWUlrJva5BI0vNqj94KbK-K52h3QjkRmT9z1A2SfXpthHliZ8BOIZ4CJrGR0oaP2JkaxFitef-oqI3AewXojipppLtBoveqKLgu687YxV5D6XIJaqsoPVOOd6dNTVL1_loMVQDSITSR9Cx-jrMPoOJPObjrFMEjdnCtLk1SYghySzM4PYVG"/>
+<span class="absolute top-space-3 left-space-3 px-space-2 py-0.5 rounded-full bg-surface-card/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+              Ages 1–3
+            </span>
+<span class="absolute bottom-space-3 right-space-3 px-space-2 py-0.5 rounded-md bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm">
+              45 mins
+            </span>
+</div>
+<div class="p-space-5 flex flex-col flex-grow">
+<div class="flex items-center gap-space-2 mb-space-2">
+<span class="px-space-2 py-0.5 rounded bg-accent-sunshine text-accent-sunshine-foreground font-label-sm text-label-sm font-medium">Sensory</span>
+<span class="px-space-2 py-0.5 rounded bg-secondary-container text-secondary-foreground font-label-sm text-label-sm font-medium">Gentle Play</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-1">Toddler Time</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-space-4">
+              Gentle movement and guided play for little explorers.
+            </p>
+<div class="pt-space-3 flex items-center justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-muted-text block">Demo session</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₱350</span>
+</div>
+<button class="px-space-3 py-space-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="openProgramModal('Toddler Time', 'Ages 1–3', '45 minutes', '₱350', 'Gentle movement and guided play for little explorers. Sessions incorporate soft sensory stations, melodic rhythm songs, and guided motor navigation for toddlers alongside a caring parent or guardian.')">
+                Details &amp; Schedule
+              </button>
+</div>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="flex flex-col h-full bg-surface-card rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Active preschool children aged 3 to 5 balancing playfully across soft foam balance beams and navigating gentle obstacle courses in an orderly, sunny, warm toned indoor play center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMmwShOKePs5_PqfgY6uSnF5ihjeAjN-td7eSFFZBCDoN_yHHwwZI6b9GjN60HOq9fFrpC1mSxfem8OCVO88vmGbbfudb9jhboV8HwYAbYFXWnfloxr3bywC4JORvW0L7VPWO_Na5A9L_zVDpEThRNaQy93KvendnoSbfV9gcN327USNS0t5ZKDhUpgoPqTXtKjnoVU9Wcsrm8fmloqhO37zEdnDkEzvVJiAq2-qmi4OUkMNZP1MSE"/>
+<span class="absolute top-space-3 left-space-3 px-space-2 py-0.5 rounded-full bg-surface-card/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+              Ages 3–5
+            </span>
+<span class="absolute bottom-space-3 right-space-3 px-space-2 py-0.5 rounded-md bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm">
+              45 mins
+            </span>
+</div>
+<div class="p-space-5 flex flex-col flex-grow">
+<div class="flex items-center gap-space-2 mb-space-2">
+<span class="px-space-2 py-0.5 rounded bg-secondary-container text-secondary-foreground font-label-sm text-label-sm font-medium">Active</span>
+<span class="px-space-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">Coordination</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-1">Little Explorers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-space-4">
+              Movement, balance, coordination, and playful challenges.
+            </p>
+<div class="pt-space-3 flex items-center justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-muted-text block">Demo session</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₱400</span>
+</div>
+<button class="px-space-3 py-space-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="openProgramModal('Little Explorers', 'Ages 3–5', '45 minutes', '₱400', 'Movement, balance, coordination, and playful challenges. Designed for curious preschoolers ready to practice jumping, climbing safely, and group cooperative games.')">
+                Details &amp; Schedule
+              </button>
+</div>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="flex flex-col h-full bg-surface-card rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Young children practicing gentle gymnastics tumbling, stretching on cushioned floor pads under the supervision of a warm facilitator in a welcoming, bright activity studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUNlVoGMFniKcWJsTzYPUi_wuH1ZgY6iUIkpIYdlsESmXR4Xyw-FhqG1FjTl97tdvdHToNAz0Jzger4YRzEMzEMIqF7Zqpn1B13-tP_FnExxzPGYlUm1AwfjzBUSN8beE48kir3np0sNxW3oyqKcKtFR4YdXp2fYEKnIEIIMBBvQp4xs9kdY1dR1Hdwty0fknpidswXWmGB0V0YUFqDQSXiCwf2axxtTy_DPrpRv6UL9WUIZSkF5x0"/>
+<span class="absolute top-space-3 left-space-3 px-space-2 py-0.5 rounded-full bg-surface-card/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+              Ages 5–8
+            </span>
+<span class="absolute bottom-space-3 right-space-3 px-space-2 py-0.5 rounded-md bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm">
+              45 mins
+            </span>
+</div>
+<div class="p-space-5 flex flex-col flex-grow">
+<div class="flex items-center gap-space-2 mb-space-2">
+<span class="px-space-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium">Strength</span>
+<span class="px-space-2 py-0.5 rounded bg-secondary-container text-secondary-foreground font-label-sm text-label-sm font-medium">Agility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-1">Junior Gymnastics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-space-4">
+              A fun introduction to gymnastics fundamentals.
+            </p>
+<div class="pt-space-3 flex items-center justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-muted-text block">Demo session</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₱450</span>
+</div>
+<button class="px-space-3 py-space-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="openProgramModal('Junior Gymnastics', 'Ages 5–8', '45 minutes', '₱450', 'A fun introduction to gymnastics fundamentals. Children build core stability, confidence, body awareness, and flexibility in a non-competitive, supportive environment.')">
+                Details &amp; Schedule
+              </button>
+</div>
+</div>
+</div>
+<!-- Program 4 -->
+<div class="flex flex-col h-full bg-surface-card rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Children of varied ages playing safely with wooden train tracks, modular play foam blocks, and reading quiet picture books in a large, airy community children play center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcm7p3EXvEMyJ1whHNn0OJBWKqm10N1tGlzjX-OMxApUrjjBXk4FEgS-2HnASsKxd80DWKY9ial2GNmSGJ4weN41NV2BIwVtuSRo1ylRKkzNYpoqYP-mGc6Og1dw0B2ZlW7Ks_2jXl1cOz_SCxaDuZzdZg6K8Coub7MyoqrcWQwLHOeasTJ7feIyE51jnGW9dCIigOBbcZqt3RcxBndzhBzz0oIYaBRHibk6yMJ-21HdhfnPZv7eLx"/>
+<span class="absolute top-space-3 left-space-3 px-space-2 py-0.5 rounded-full bg-surface-card/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-semibold">
+              Ages 2–10
+            </span>
+<span class="absolute bottom-space-3 right-space-3 px-space-2 py-0.5 rounded-md bg-on-secondary-fixed text-on-secondary font-label-sm text-label-sm">
+              90 mins
+            </span>
+</div>
+<div class="p-space-5 flex flex-col flex-grow">
+<div class="flex items-center gap-space-2 mb-space-2">
+<span class="px-space-2 py-0.5 rounded bg-accent-sunshine text-accent-sunshine-foreground font-label-sm text-label-sm font-medium">Free Exploration</span>
+<span class="px-space-2 py-0.5 rounded bg-secondary-container text-secondary-foreground font-label-sm text-label-sm font-medium">Supervised</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-1">Open Play</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-space-4">
+              Flexible supervised play in the PlayNest activity space.
+            </p>
+<div class="pt-space-3 flex items-center justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-muted-text block">Demo session</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₱300</span>
+</div>
+<button class="px-space-3 py-space-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="openProgramModal('Open Play', 'Ages 2–10', '90 minutes', '₱300', 'Flexible supervised play in the PlayNest activity space. Children can follow their natural curiosities across sensory stations, reading nooks, and social climbing setups with peer collaboration.')">
+                Details &amp; Schedule
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footnote explaining Mobile checkout -->
+<div class="mt-space-6 p-space-4 rounded-xl bg-surface-card text-center shadow-sm">
+<p class="font-label-md text-label-md text-muted-text">
+<span class="font-semibold text-on-surface">Booking Note:</span> In alignment with our parent-first design, session enrollments and child profiles are reserved inside the PlayNest mobile application.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 3: BENEFITS (#benefits) -->
+<section class="w-full py-space-10 bg-surface" id="benefits">
+<div class="max-w-7xl mx-auto px-space-6">
+<div class="text-center max-w-2xl mx-auto mb-space-8">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">The PlayNest Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-1">Playful Restraint, Maximum Care</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">
+          The children bring the joy and spontaneous energy; our studios provide the gentle calm, safety, and predictable comfort.
+        </p>
+</div>
+<!-- 4 Pillars Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-6">
+<!-- Pillar 1 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col items-start transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-space-4 text-tertiary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Safe Environment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            HEPA air-filtered spaces, organic non-toxic play materials, and child-safe sanitized play zones cleaned after each session.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col items-start transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-accent-sunshine flex items-center justify-center mb-space-4 text-accent-sunshine-foreground">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Active Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Pediatrician-endorsed sensory and physical milestones integrated into playful discovery and collaborative problem-solving.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col items-start transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center mb-space-4 text-primary">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Small Groups</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Intimate facilitator-to-child ratios ensuring personalized care, comfort, sensory regulation, and calm emotional guidance.
+          </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col items-start transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-space-4 text-secondary-foreground">
+<span class="material-symbols-outlined text-[24px]">contactless</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Easy Booking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Reserve spots, select children, and manage contactless check-in passes via the mobile app in under two minutes.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: HOW IT WORKS -->
+<section class="w-full py-space-10 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-space-6">
+<div class="text-center max-w-xl mx-auto mb-space-8">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary font-bold">Simple 3-Step Journey</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-1">How PlayNest Works</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">
+          From browsing developmental activities to effortless studio arrival.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-6 relative">
+<!-- Step 1 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col relative">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center mb-space-4">
+            1
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Find an Activity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Browse age-appropriate developmental sessions suited to your child’s current stage, motor goals, and energy levels.
+          </p>
+<div class="mt-space-4 pt-space-3 text-muted-text font-label-sm text-label-sm flex items-center gap-space-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span> Filter by ages 1 to 10
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col relative">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary font-headline-sm text-headline-sm flex items-center justify-center mb-space-4">
+            2
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Choose a Schedule</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pick your preferred studio session slot in the PlayNest mobile app. Select which child is attending and review safety details.
+          </p>
+<div class="mt-space-4 pt-space-3 text-muted-text font-label-sm text-label-sm flex items-center gap-space-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span> Real-time studio capacity
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-6 rounded-2xl bg-surface-card shadow-sm flex flex-col relative">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center mb-space-4">
+            3
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2">Come &amp; Play</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Arrive relaxed. Present your digital contactless check-in pass right on your phone at the friendly studio welcome desk.
+          </p>
+<div class="mt-space-4 pt-space-3 text-muted-text font-label-sm text-label-sm flex items-center gap-space-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span> Contactless digital check-in
+          </div>
+</div>
+</div>
+<!-- App boundary notice callout -->
+<div class="mt-space-8 p-space-5 rounded-2xl bg-surface-card shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-4 text-center sm:text-left">
+<div class="flex items-center gap-space-3">
+<div class="p-space-2 rounded-xl bg-accent-sunshine text-accent-sunshine-foreground shrink-0">
+<span class="material-symbols-outlined text-[24px]">app_shortcut</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Mobile-First Attendance</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              All session reservations and digital check-in passes are handled seamlessly in the PlayNest mobile app.
+            </p>
+</div>
+</div>
+<a class="shrink-0 px-space-5 py-space-2 rounded-full bg-on-secondary-fixed text-on-secondary font-label-md text-label-md hover:bg-on-surface transition-colors" href="#programs">
+          Browse Programs
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: SAMPLE SCHEDULE SECTION (#schedule) -->
+<section class="w-full py-space-10 bg-surface" id="schedule">
+<div class="max-w-7xl mx-auto px-space-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-8 gap-space-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-space-2.5 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium mb-space-2">
+<span class="material-symbols-outlined text-[14px]">info</span> Sample Representation
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Weekly Studio Schedule</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-1">
+            Sample weekly schedule for planning and preview purposes. (No claim of live slot inventory).
+          </p>
+</div>
+<!-- Day Selector Tabs (Filter Interactive) -->
+<div class="flex flex-wrap gap-space-1 bg-surface-card p-space-1 rounded-xl shadow-sm" id="schedule-day-tabs">
+<button class="day-tab active px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-semibold bg-primary text-on-primary transition-all" data-day="tue" onclick="filterDay('tue')">Tue</button>
+<button class="day-tab px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-day="wed" onclick="filterDay('wed')">Wed</button>
+<button class="day-tab px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-day="thu" onclick="filterDay('thu')">Thu</button>
+<button class="day-tab px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-day="fri" onclick="filterDay('fri')">Fri</button>
+<button class="day-tab px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-day="sat" onclick="filterDay('sat')">Sat</button>
+<button class="day-tab px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-day="sun" onclick="filterDay('sun')">Sun</button>
+</div>
+</div>
+<!-- Schedule Table / Card View -->
+<div class="bg-surface-card rounded-2xl shadow-sm overflow-hidden p-space-4 sm:p-space-6">
+<div class="flex items-center justify-between pb-space-4 border-b border-border-subtle mb-space-4">
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">apartment</span>
+<span class="font-headline-sm text-headline-sm text-on-surface" id="schedule-location-label">PlayNest Activity Center — Tuesday Slots</span>
+</div>
+<span class="font-label-sm text-label-sm text-muted-text">Mondays: Closed for sanitization</span>
+</div>
+<!-- Timetable Items -->
+<div class="space-y-space-3" id="schedule-list">
+<!-- Row 1 -->
+<div class="schedule-item flex flex-col sm:flex-row sm:items-center justify-between p-space-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-space-3" data-days="tue,thu,sat">
+<div class="flex items-start sm:items-center gap-space-4">
+<div class="px-space-3 py-space-1 bg-surface-card rounded-lg font-label-lg text-label-lg font-bold text-primary shadow-xs shrink-0">
+                09:00 AM
+              </div>
+<div>
+<div class="flex items-center gap-space-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Toddler Time</h4>
+<span class="px-space-2 py-0.5 rounded-full bg-accent-sunshine text-accent-sunshine-foreground font-label-sm text-label-sm font-semibold">Ages 1–3</span>
+</div>
+<p class="font-body-md text-body-md text-muted-text mt-0.5">Studio A • 45 mins • Gentle Movement &amp; Sensory</p>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-4">
+<span class="font-label-md text-label-md text-secondary-foreground bg-secondary-container px-space-2 py-0.5 rounded">Sample: 4 spots open</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₱350</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="schedule-item flex flex-col sm:flex-row sm:items-center justify-between p-space-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-space-3" data-days="tue,wed,fri,sat">
+<div class="flex items-start sm:items-center gap-space-4">
+<div class="px-space-3 py-space-1 bg-surface-card rounded-lg font-label-lg text-label-lg font-bold text-tertiary shadow-xs shrink-0">
+                10:30 AM
+              </div>
+<div>
+<div class="flex items-center gap-space-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Little Explorers</h4>
+<span class="px-space-2 py-0.5 rounded-full bg-secondary-container text-secondary-foreground font-label-sm text-label-sm font-semibold">Ages 3–5</span>
+</div>
+<p class="font-body-md text-body-md text-muted-text mt-0.5">Studio B • 45 mins • Movement &amp; Balance Obstacles</p>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-4">
+<span class="font-label-md text-label-md text-secondary-foreground bg-secondary-container px-space-2 py-0.5 rounded">Sample: 2 spots open</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₱400</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="schedule-item flex flex-col sm:flex-row sm:items-center justify-between p-space-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-space-3" data-days="tue,thu,fri,sun">
+<div class="flex items-start sm:items-center gap-space-4">
+<div class="px-space-3 py-space-1 bg-surface-card rounded-lg font-label-lg text-label-lg font-bold text-on-surface shadow-xs shrink-0">
+                02:00 PM
+              </div>
+<div>
+<div class="flex items-center gap-space-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Open Play</h4>
+<span class="px-space-2 py-0.5 rounded-full bg-accent-sunshine text-accent-sunshine-foreground font-label-sm text-label-sm font-semibold">Ages 2–10</span>
+</div>
+<p class="font-body-md text-body-md text-muted-text mt-0.5">Central Play Loft • 90 mins • Supervised Free Exploration</p>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-4">
+<span class="font-label-md text-label-md text-semantic-warning bg-surface-container-high px-space-2 py-0.5 rounded">Sample: Filling fast</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₱300</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="schedule-item flex flex-col sm:flex-row sm:items-center justify-between p-space-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-space-3" data-days="wed,sat,sun">
+<div class="flex items-start sm:items-center gap-space-4">
+<div class="px-space-3 py-space-1 bg-surface-card rounded-lg font-label-lg text-label-lg font-bold text-primary shadow-xs shrink-0">
+                04:00 PM
+              </div>
+<div>
+<div class="flex items-center gap-space-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Junior Gymnastics</h4>
+<span class="px-space-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Ages 5–8</span>
+</div>
+<p class="font-body-md text-body-md text-muted-text mt-0.5">Studio A • 45 mins • Agility, Floor Mat Basics</p>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-4">
+<span class="font-label-md text-label-md text-secondary-foreground bg-secondary-container px-space-2 py-0.5 rounded">Sample: 3 spots open</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₱450</span>
+</div>
+</div>
+</div>
+<div class="mt-space-6 pt-space-4 flex flex-col sm:flex-row items-center justify-between gap-space-3 text-muted-text font-label-sm text-label-sm">
+<span>* Times, studio rooms, and capacities are illustrative sample data.</span>
+<span class="font-medium text-primary">Reserve in app for live studio schedule</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: DEMO PRICING SECTION (#pricing) -->
+<section class="w-full py-space-10 bg-surface-base" id="pricing">
+<div class="max-w-7xl mx-auto px-space-6">
+<div class="text-center max-w-2xl mx-auto mb-space-8">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Simple Evaluation Pricing</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-1">Demonstration Passes &amp; Offers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">
+          Sample demonstration packages for parent evaluation. Program session prices vary. Membership and passes are managed via the mobile app environment.
+        </p>
+</div>
+<!-- 3 Tier Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-6 items-stretch">
+<!-- Card 1: Single Session -->
+<div class="flex flex-col p-space-6 rounded-2xl bg-surface-card shadow-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-muted-text font-semibold">Drop-in</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-1">Single Session</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">Drop-in exploration for spontaneous days of active sensory discovery.</p>
+<div class="my-space-6">
+<span class="font-headline-lg text-[36px] font-bold text-on-surface">₱450</span>
+<span class="font-label-md text-label-md text-muted-text">/ single session</span>
+</div>
+<ul class="space-y-space-3 font-body-md text-body-md text-on-surface-variant mb-space-8 flex-grow">
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Single 45 or 90-min session</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Supervised play facilitator</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Sanitized tactile equipment access</span>
+</li>
+<li class="flex items-center gap-space-2 text-muted-text">
+<span class="material-symbols-outlined text-muted-text text-[18px]">remove</span>
+<span>Flexible reschedule not included</span>
+</li>
+</ul>
+<button class="w-full py-space-3 px-space-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-colors" onclick="alertDemoNotice('Single Session')">
+            Evaluate Single Pass
+          </button>
+</div>
+<!-- Card 2: 5-Visit Pass (Featured) -->
+<div class="flex flex-col p-space-6 rounded-2xl bg-surface-card shadow-md relative ring-2 ring-primary">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-space-3 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider shadow-xs">
+            Most Popular Choice
+          </div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Flexible Value</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-1">5-Visit Pass</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">Save 20% on multi-session visits with flexible family scheduling.</p>
+<div class="my-space-6">
+<span class="font-headline-lg text-[36px] font-bold text-primary">₱1,800</span>
+<span class="font-label-md text-label-md text-muted-text">/ 5 credits (₱360/ea)</span>
+</div>
+<ul class="space-y-space-3 font-body-md text-body-md text-on-surface-variant mb-space-8 flex-grow">
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Valid across all developmental programs</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Shareable between siblings</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Valid for 90 days from activation</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Instant mobile pass barcode</span>
+</li>
+</ul>
+<button class="w-full py-space-3 px-space-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-colors" onclick="alertDemoNotice('5-Visit Pass')">
+            Evaluate 5-Visit Pass
+          </button>
+</div>
+<!-- Card 3: Monthly Membership -->
+<div class="flex flex-col p-space-6 rounded-2xl bg-surface-card shadow-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary font-semibold">Community Routine</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-1">Monthly Membership</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">Unlimited weekday open play &amp; milestone developmental tracking.</p>
+<div class="my-space-6">
+<span class="font-headline-lg text-[36px] font-bold text-on-surface">₱1,499</span>
+<span class="font-label-md text-label-md text-muted-text">/ month</span>
+</div>
+<ul class="space-y-space-3 font-body-md text-body-md text-on-surface-variant mb-space-8 flex-grow">
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Unlimited weekday Open Play access</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>2 structured program credits included</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Milestone tracking in mobile child profile</span>
+</li>
+<li class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-semantic-success text-[18px]">check</span>
+<span>Parent lounge tea &amp; Wi-Fi access</span>
+</li>
+</ul>
+<button class="w-full py-space-3 px-space-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-colors" onclick="alertDemoNotice('Monthly Membership')">
+            Evaluate Membership
+          </button>
+</div>
+</div>
+<!-- Mandatory PRD Disclaimer -->
+<div class="mt-space-6 p-space-4 rounded-xl bg-surface-card text-center shadow-xs">
+<p class="font-label-md text-label-md text-muted-text">
+<strong class="text-on-surface">Evaluation Disclaimer:</strong> All amounts shown are sample demonstration offers for evaluation. Program session prices vary. PlayNest does not collect browser credit card checkout; membership redemption is evaluated in the mobile trial app environment.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FREQUENTLY ASKED QUESTIONS (#faq) -->
+<section class="w-full py-space-10 bg-surface" id="faq">
+<div class="max-w-4xl mx-auto px-space-6">
+<div class="text-center mb-space-8">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary font-bold">Clear Guidance</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-1">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2">
+          Everything parents need to know about preparing for their studio visit.
+        </p>
+</div>
+<!-- FAQ Accordion List -->
+<div class="space-y-space-4">
+<!-- Question 1 -->
+<div class="bg-surface-card rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-5 text-left flex items-center justify-between gap-space-4 focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">What ages does PlayNest cater to?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform duration-200">keyboard_arrow_down</span>
+</button>
+<div class="faq-content px-space-5 pb-space-5 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Programs cater to children from 1 to 10 years old, organized by developmental stages: 
+              <br/>• <strong>Toddler Time:</strong> Ages 1–3
+              <br/>• <strong>Little Explorers:</strong> Ages 3–5
+              <br/>• <strong>Junior Gymnastics:</strong> Ages 5–8
+              <br/>• <strong>Open Play:</strong> Ages 2–10
+            </p>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="bg-surface-card rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-5 text-left flex items-center justify-between gap-space-4 focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">How do I book a session?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform duration-200">keyboard_arrow_down</span>
+</button>
+<div class="faq-content px-space-5 pb-space-5 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Sessions are booked directly through the PlayNest mobile app. In the app, you can select your child, review dietary or sensory preferences, choose your preferred session time, and instantly receive your digital contactless check-in pass.
+            </p>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="bg-surface-card rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-5 text-left flex items-center justify-between gap-space-4 focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">Do parents need to attend?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform duration-200">keyboard_arrow_down</span>
+</button>
+<div class="faq-content px-space-5 pb-space-5 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              For Toddler Time (ages 1–3), active parent or guardian participation is encouraged to support emotional confidence and motor exploration. For older groups (Little Explorers and Junior Gymnastics), parents may observe comfortably from our adjacent viewing lounge with dedicated tea and Wi-Fi.
+            </p>
+</div>
+</div>
+<!-- Question 4 -->
+<div class="bg-surface-card rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full p-space-5 text-left flex items-center justify-between gap-space-4 focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">Can I reschedule or cancel?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform duration-200">keyboard_arrow_down</span>
+</button>
+<div class="faq-content px-space-5 pb-space-5 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Session management policies are configured in the mobile application trial. We respect the unpredictability of toddler life and early parenting routines, and session policies reflect clear guidelines inside your mobile booking profile.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: FINAL CALL TO ACTION -->
+<section class="w-full py-space-10 bg-surface-container-high relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-space-6 text-center relative z-10">
+<div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary text-on-primary mb-space-4 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">sentiment_satisfied</span>
+</div>
+<h2 class="font-headline-lg text-[32px] sm:text-[40px] font-bold text-on-surface tracking-tight mb-space-3">
+        Ready for your next adventure?
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-space-6">
+        Join our growing community of mindful parents. Discover warm, calm spaces where your child’s natural curiosity leads the way.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-4">
+<a class="inline-flex items-center justify-center px-space-6 py-space-3 rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-[0.98]" href="#programs">
+          Explore Programs
+        </a>
+<button class="inline-flex items-center justify-center px-space-6 py-space-3 rounded-full bg-surface-card text-on-surface font-headline-sm text-headline-sm shadow-sm hover:bg-surface-container transition-all" onclick="openDemoDialog()">
+<span class="material-symbols-outlined mr-space-2 text-[20px] text-tertiary">info</span>
+          Mobile App Demo Guidance
+        </button>
+</div>
+<p class="font-label-sm text-label-sm text-muted-text mt-space-6">
+        PlayNest Early Development Centers • Gentle Movement &amp; Mindful Play
+      </p>
+</div>
+</section>
+<!-- MODAL: Program Details & Schedule Preview (Simple Accessible Vanilla JS Modal) -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-xs flex items-center justify-center p-space-4" id="program-modal">
+<div class="bg-surface-card rounded-2xl max-w-lg w-full p-space-6 shadow-xl relative animate-in fade-in zoom-in-95 duration-150">
+<button class="absolute top-space-4 right-space-4 text-muted-text hover:text-on-surface p-1 rounded-full bg-surface-container" onclick="closeProgramModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-space-2 mb-space-2">
+<span class="px-space-2.5 py-0.5 rounded-full bg-secondary-container text-secondary-foreground font-label-sm text-label-sm font-semibold" id="modal-age">Ages 1–3</span>
+<span class="px-space-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" id="modal-duration">45 minutes</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-space-2" id="modal-title">Program Title</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-6" id="modal-desc">
+        Program detailed description goes here.
+      </p>
+<div class="p-space-4 rounded-xl bg-surface-container-low mb-space-6">
+<div class="flex items-center justify-between mb-space-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sample Evaluation Fee</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary" id="modal-price">₱350</span>
+</div>
+<p class="font-label-sm text-label-sm text-muted-text">
+          Drop-in sample price per child. Passes and sibling discounts are selected in the mobile check-in flow.
+        </p>
+</div>
+<div class="flex items-center justify-end gap-space-3">
+<button class="px-space-4 py-space-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeProgramModal()">
+          Close
+        </button>
+<a class="px-space-4 py-space-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-colors" href="#schedule" onclick="closeProgramModal()">
+          View Timetable
+        </a>
+</div>
+</div>
+</div>
+<!-- MODAL / ALERT: Mobile App Guidance Modal -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-xs flex items-center justify-center p-space-4" id="demo-guide-modal">
+<div class="bg-surface-card rounded-2xl max-w-md w-full p-space-6 shadow-xl relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center mb-space-3 text-secondary-foreground">
+<span class="material-symbols-outlined text-[20px]">touch_app</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-1">PlayNest Mobile Booking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-4">
+        PlayNest bookings, waivers, dietary preferences, and contactless check-in QR passes are managed exclusively through the PlayNest parent mobile app to ensure privacy and safety.
+      </p>
+<div class="p-space-3 bg-surface-container rounded-xl font-label-sm text-label-sm text-on-surface-variant mb-space-5">
+<span class="font-semibold block text-on-surface mb-0.5">Evaluation Note:</span>
+        This marketing preview presents confirmed program names, curriculum goals, and sample schedules. Browser checkout is not active.
+      </div>
+<button class="w-full py-space-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors" onclick="closeDemoDialog()">
+        Understood • Return to Site
+      </button>
+</div>
+</div>
+<!-- Inline Micro-Interaction Script -->
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close all other open FAQs for a clean accordion effect
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('#faq .material-symbols-outlined').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    function filterDay(dayKey) {
+      // Update Tab UI
+      const tabs = document.querySelectorAll('.day-tab');
+      tabs.forEach(tab => {
+        if (tab.getAttribute('data-day') === dayKey) {
+          tab.className = 'day-tab active px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-semibold bg-primary text-on-primary transition-all';
+        } else {
+          tab.className = 'day-tab px-space-3 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all';
+        }
+      });
+
+      // Update Label
+      const dayNames = {
+        'tue': 'Tuesday',
+        'wed': 'Wednesday',
+        'thu': 'Thursday',
+        'fri': 'Friday',
+        'sat': 'Saturday',
+        'sun': 'Sunday'
+      };
+      const label = document.getElementById('schedule-location-label');
+      if (label) {
+        label.innerText = `PlayNest Activity Center — ${dayNames[dayKey]} Slots`;
+      }
+
+      // Filter Item Rows
+      const rows = document.querySelectorAll('.schedule-item');
+      rows.forEach(row => {
+        const allowedDays = row.getAttribute('data-days') || '';
+        if (allowedDays.includes(dayKey)) {
+          row.style.display = 'flex';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function openProgramModal(title, age, duration, price, desc) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-age').innerText = age;
+      document.getElementById('modal-duration').innerText = duration;
+      document.getElementById('modal-price').innerText = price;
+      document.getElementById('modal-desc').innerText = desc;
+      document.getElementById('program-modal').classList.remove('hidden');
+    }
+
+    function closeProgramModal() {
+      document.getElementById('program-modal').classList.add('hidden');
+    }
+
+    function openDemoDialog() {
+      document.getElementById('demo-guide-modal').classList.remove('hidden');
+    }
+
+    function closeDemoDialog() {
+      document.getElementById('demo-guide-modal').classList.add('hidden');
+    }
+
+    function alertDemoNotice(offerName) {
+      alert(`${offerName}: In this demonstration environment, passes and memberships are managed inside the PlayNest parent mobile application.`);
+    }
+
+    // Close on outside click
+    window.addEventListener('click', function(e) {
+      const pModal = document.getElementById('program-modal');
+      const dModal = document.getElementById('demo-guide-modal');
+      if (e.target === pModal) pModal.classList.add('hidden');
+      if (e.target === dModal) dModal.classList.add('hidden');
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(43,33,28,0.03)]"><div class="max-w-7xl mx-auto px-space-6 pt-space-10 pb-space-8"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-8 mb-space-8"><div class="space-y-space-3 md:col-span-2"><div class="flex items-center gap-space-3"><img alt="PlayNest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNKXejZTNuIkQS3ukkAhv0lF5PfNAaF7_F8g1eqJE7c5dXCmOLVOOhkgtnau8DMmB_n384_j4qUzSDHSQ1wcm_4sYBu-egs-2OMPRq8aFOpFnJihAd6NfOo3HryklptcmTWTKN3vjunxgN6jJLUD2pJTwjHPPb7q13Ds8YHWnhMcC4Q7iLsHD2n8ri7u_1B7IODfq-T8OwkR7OP55t7P1lQfSJo9HXTvlMO-c34vJDFuG1xrDJSkS5OUE"/><span class="font-headline-sm text-headline-sm text-on-surface">PlayNest</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Thoughtfully curated early-learning and creative play sessions designed for mindful parenting, collaborative social growth, and gentle development.</p><div class="inline-flex items-center gap-space-2 px-space-3 py-space-1 bg-accent-sunshine rounded-full"><span class="material-symbols-outlined text-accent-sunshine-foreground text-[16px]">info</span><span class="font-label-sm text-label-sm text-accent-sunshine-foreground font-medium">PlayNest Activity Center (Demo Environment)</span></div></div><div class="space-y-space-3"><h3 class="font-headline-sm text-headline-sm text-on-surface">Quick Links</h3><ul class="space-y-space-2"><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#programs">Programs &amp; Studios</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#schedule">Weekly Sessions</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#benefits">Why PlayNest</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#pricing">Membership Passes</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#faq">Parent FAQs</a></li></ul></div><div class="space-y-space-3"><h3 class="font-headline-sm text-headline-sm text-on-surface">Visit &amp; Care</h3><p class="font-body-md text-body-md text-on-surface-variant">452 Willowbrook Lane, Suite 2B<br/>Sunnyvale District, CA</p><p class="font-label-md text-label-md text-muted-text">Tuesday – Sunday: 8:30 AM – 6:00 PM<br/>Mondays: Closed for Studio Care</p></div></div><div class="pt-space-6 flex flex-col sm:flex-row items-center justify-between gap-space-4"><p class="font-label-sm text-label-sm text-muted-text">© 2025 PlayNest Inc. All rights reserved. Demo showcase for parent-first booking interface.</p><div class="flex items-center gap-space-6"><span class="font-label-sm text-label-sm text-muted-text">Privacy Philosophy</span><span class="font-label-sm text-label-sm text-muted-text">Safety Guidelines</span><span class="font-label-sm text-label-sm text-muted-text">Terms of Service</span></div></div></div></footer></body></html>

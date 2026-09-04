@@ -1,0 +1,19 @@
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured home
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured activities
+Captured activities-filtered
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured activity-detail
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured child-and-session
+Captured review
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured bookings
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured confirmation
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured check-in-pass
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured profile
+PASS: native screens, filters, confirmed pass and restart persistence

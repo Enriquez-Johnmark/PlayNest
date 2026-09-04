@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>PlayNest</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;font-family:'Plus Jakarta Sans',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "border-subtle": "hsl(28 20% 89%)",
+          "on-primary": "#ffffff",
+          "on-surface": "hsl(24 20% 14%)",
+          "surface-bright": "#fff8f6",
+          "accent-sunshine-foreground": "#764D18",
+          "secondary-foreground": "hsl(176 45% 24%)",
+          "background": "hsl(30 40% 98%)",
+          "surface-card": "#FFFFFF",
+          "accent-sunshine": "hsl(42 92% 90%)",
+          "primary": "#ee5e41",
+          "primary-hover": "#e24c2d",
+          "primary-container": "#fdeae5",
+          "secondary": "hsl(176 45% 24%)",
+          "secondary-container": "hsl(176 38% 91%)",
+          "muted-surface": "#F6F3F0",
+          "muted-text": "#7C736E"
+        },
+        borderRadius: {
+          "card": "16px",
+          "btn": "12px",
+          "full": "9999px"
+        },
+        fontFamily: {
+          sans: ["Plus Jakarta Sans", "sans-serif"]
+        }
+      }
+    }
+  }
+</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style></head><body class="bg-background font-sans text-[14px] text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-background/90 backdrop-blur-xl border-b border-border-subtle shadow-sm"><div class="h-16 px-4 flex items-center justify-between"><div class="flex items-center gap-2"><button aria-label="Go back" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-muted-surface transition-colors active:scale-95" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="PlayNest Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNKXejZTNuIkQS3ukkAhv0lF5PfNAaF7_F8g1eqJE7c5dXCmOLVOOhkgtnau8DMmB_n384_j4qUzSDHSQ1wcm_4sYBu-egs-2OMPRq8aFOpFnJihAd6NfOo3HryklptcmTWTKN3vjunxgN6jJLUD2pJTwjHPPb7q13Ds8YHWnhMcC4Q7iLsHD2n8ri7u_1B7IODfq-T8OwkR7OP55t7P1lQfSJo9HXTvlMO-c34vJDFuG1xrDJSkS5OUE"/><h1 class="font-semibold text-[16px] text-on-surface tracking-tight line-clamp-1">Activity Detail</h1></div><div class="flex items-center gap-1"><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-muted-text hover:text-on-surface transition-colors active:scale-95"><span class="material-symbols-outlined text-[20px]">notifications</span></button><a aria-label="Parent Profile" class="w-10 h-10 flex items-center justify-center rounded-full hover:opacity-90 active:scale-95 transition-transform" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqdS4NP277pSnv8QajX3LfvcZaw4iZOepNG0dcNCwHlUgalzFJnfKGtr9ZUGUAIN2cviwj6PUzDtGlGa_7-FkO8WYfFD9-GS9ZmeHso1qA3fasmMIyqRMT7NWrZ1i3VgxHJ2FSNItmUiG4TvfSZkSm74RQZMi8ZJ4lstu7LPlCuc33T-ujnupU4MvI4QcPcR9ok33_dYwNwptEvXmJm_mBeP-hYPmLzDrlWZ3ZOE_fK-Xg5d_jz4Cy"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-background"><div class="flex flex-col w-full pb-32">
+<!-- Top Visual Gallery & Floating Badges -->
+<div class="relative w-full px-4 pt-3">
+<div class="relative w-full h-72 rounded-card overflow-hidden shadow-sm border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="A serene, sunlit Scandinavian aesthetic sensory play studio. A small wooden table features pine needles, smooth wooden blocks, and organic lavender dough. Soft morning light streams through sheer linen curtains onto pale wood floors, muted eucalyptus sage accents, warm terracotta details, and cozy textured rugs with soft focus depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtbMOefLyXlPqYXJxx_PMyuwYUfI92TJn6qg7Lzl1ZcvGCT6qLcEsRqKvu-sf4rZCC6PIx2gh2spoB0AyTrK2dqy9QYlkbb8sECjEg-9CgG54yJNWWR17yt7F7nP4bk4kfmoVsyGxNQHYXNUVFE0YqAG9m4V40BJpBEXwkjiCaNW1CLkdvTIFIKjgNhShUZGSpjXeH3HF4UMpIeSXYKrhPKgMck2hnr1aQxI5xmPmL_viec1uLxtXL"/>
+<!-- Ambient Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<!-- Quick Action Overlay Buttons -->
+<div class="absolute top-3 right-3 flex items-center gap-2">
+<button aria-label="Share experience" class="w-10 h-10 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" id="btn-share">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button aria-label="Save activity" class="w-10 h-10 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform" id="btn-bookmark">
+<span class="material-symbols-outlined text-[20px]" id="bookmark-icon">bookmark_border</span>
+</button>
+</div>
+<!-- Hero Overlaid Micro-chips -->
+<div class="absolute bottom-3 left-3 right-3 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-secondary-foreground text-[12px] font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[15px]">child_care</span>
+          Ages 18 mos – 3 yrs
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/95 text-on-surface text-[12px] font-medium shadow-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">psychology</span>
+          Sensory &amp; Tactile Play
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/90 text-on-surface text-[12px] font-medium backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-muted-text">group</span>
+          Max 8 children
+        </span>
+</div>
+</div>
+</div>
+<!-- Primary Header & Key Logistics Card -->
+<div class="px-4 mt-3">
+<div class="bg-surface-card rounded-card p-4 shadow-sm border border-border-subtle flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[12px] font-semibold text-primary bg-primary-container px-2.5 py-1 rounded-full">
+          Forest &amp; Botanic Series
+        </span>
+<div class="flex items-center gap-1 bg-accent-sunshine px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-accent-sunshine-foreground" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[13px] font-bold text-accent-sunshine-foreground">4.9</span>
+<span class="text-[12px] text-accent-sunshine-foreground/80 font-medium">(142)</span>
+</div>
+</div>
+<h2 class="text-[22px] font-bold text-on-surface leading-snug tracking-tight mt-0.5">
+        Little Explorers: Forest Sensory Lab
+      </h2>
+<div class="flex items-center gap-1.5 text-muted-text pt-0.5">
+<span class="material-symbols-outlined text-[18px] text-primary">pin_drop</span>
+<p class="text-[13px] text-muted-text truncate font-normal">
+          The Willow Studio • Room 2B • 0.8 mi away
+        </p>
+</div>
+</div>
+</div>
+<!-- Developmental Benefits Pills -->
+<div class="px-4 mt-5">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-[16px] font-bold text-on-surface">Developmental Foundations</h3>
+<span class="text-[12px] text-primary font-semibold">Pediatrician Endorsed</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-secondary-container p-3 rounded-card border border-border-subtle flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-white/80 flex items-center justify-center text-secondary-foreground shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[18px]">back_hand</span>
+</div>
+<div class="min-w-0">
+<p class="text-[13px] font-semibold text-secondary-foreground truncate">Fine Motor Grasp</p>
+<p class="text-[11px] text-secondary-foreground/80 leading-tight">Pincer &amp; grip agility</p>
+</div>
+</div>
+<div class="bg-secondary-container p-3 rounded-card border border-border-subtle flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-white/80 flex items-center justify-center text-secondary-foreground shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[18px]">park</span>
+</div>
+<div class="min-w-0">
+<p class="text-[13px] font-semibold text-secondary-foreground truncate">Nature Connection</p>
+<p class="text-[11px] text-secondary-foreground/80 leading-tight">Organic textures</p>
+</div>
+</div>
+<div class="bg-surface-card p-3 rounded-card border border-border-subtle flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-accent-sunshine flex items-center justify-center text-accent-sunshine-foreground shrink-0">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</div>
+<div class="min-w-0">
+<p class="text-[13px] font-semibold text-on-surface truncate">Desensitization</p>
+<p class="text-[11px] text-muted-text leading-tight">Gentle sensory exposure</p>
+</div>
+</div>
+<div class="bg-surface-card p-3 rounded-card border border-border-subtle flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">diversity_1</span>
+</div>
+<div class="min-w-0">
+<p class="text-[13px] font-semibold text-on-surface truncate">Parallel Play</p>
+<p class="text-[11px] text-muted-text leading-tight">Social co-presence</p>
+</div>
+</div>
+</div>
+</div>
+<!-- What to Expect: 4 Curated Sensory Stations -->
+<div class="px-4 mt-6">
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="text-[16px] font-bold text-on-surface">What to Expect</h3>
+<span class="text-[12px] text-muted-text font-medium">4 Sensory Stations</span>
+</div>
+<div class="space-y-2.5">
+<!-- Station 1 -->
+<div class="bg-surface-card rounded-card p-4 shadow-sm border border-border-subtle flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-secondary-foreground shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">nature_people</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h4 class="text-[15px] font-bold text-on-surface">Pine &amp; Cedar Tactile Tray</h4>
+<span class="text-[12px] font-bold text-primary">Station 01</span>
+</div>
+<p class="text-[13px] text-muted-text mt-1 leading-relaxed">
+            Smooth cedar round discs, dried pine needles, and baby-safe river pebbles for open sensory rummaging and tactile sorting.
+          </p>
+</div>
+</div>
+<!-- Station 2 -->
+<div class="bg-surface-card rounded-card p-4 shadow-sm border border-border-subtle flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">bakery_dining</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h4 class="text-[15px] font-bold text-on-surface">Edible Lavender Dough</h4>
+<span class="text-[12px] font-bold text-primary">Station 02</span>
+</div>
+<p class="text-[13px] text-muted-text mt-1 leading-relaxed">
+            Handcrafted non-toxic oat-flour dough infused with natural lavender scent and dried chamomile buds for soft muscle rolling.
+          </p>
+</div>
+</div>
+<!-- Station 3 -->
+<div class="bg-surface-card rounded-card p-4 shadow-sm border border-border-subtle flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-accent-sunshine flex items-center justify-center text-accent-sunshine-foreground shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h4 class="text-[15px] font-bold text-on-surface">Rainstick Soundscape</h4>
+<span class="text-[12px] font-bold text-accent-sunshine-foreground">Station 03</span>
+</div>
+<p class="text-[13px] text-muted-text mt-1 leading-relaxed">
+            Subtle bamboo acoustic rainfall shakers and tuned wooden forest chimes calibrated to calm sensory thresholds.
+          </p>
+</div>
+</div>
+<!-- Station 4 -->
+<div class="bg-surface-card rounded-card p-4 shadow-sm border border-border-subtle flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-secondary-foreground shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h4 class="text-[15px] font-bold text-on-surface">Natural Dye Leaf Stamping</h4>
+<span class="text-[12px] font-bold text-primary">Station 04</span>
+</div>
+<p class="text-[13px] text-muted-text mt-1 leading-relaxed">
+            Beetroot and spirulina watercolor stamps pressed through real oak foliage onto unbleached cotton paper scrolls.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Studio Ambiance Photo Showcase -->
+<div class="px-4 mt-6">
+<div class="bg-surface-card rounded-card p-4 border border-border-subtle">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[20px]">cottage</span>
+<h3 class="text-[16px] font-bold text-on-surface">The Studio Space</h3>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="h-28 rounded-card overflow-hidden relative shadow-sm border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="Close up photography of organic edible sensory dough in gentle earthy tones resting inside a handcrafted light birch wood tray, soft warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr1CXVn1EtpW6I5x4pY1QTy36nGXf5t8d6rUOGlIevzY2L0CsgUcBWDOQKBx7VVqewR5ipv4LwgX48iY-xBEkughCt7NuoaE3lDgZa4nBctA2PeyljbgKdIVfLdcnNdhrS_7VeXgRopVnaMKyUaNAuFZ_AZGJLd1aBxm4zQsTwwiAwWHbfdqrHfcG47ble6ii-mQXyAkQiafKXfjwIxY60sK6O3Lo8-V33otL-ZApkihLynAvE10um"/>
+</div>
+<div class="h-28 rounded-card overflow-hidden relative shadow-sm border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="A tranquil Scandinavian classroom with floor-level cushions, soft wool rugs, muted sage green accents, and a baby crawling happily near natural wood toys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdqGowxJ9YPyM1zaBqN6no8tBNRiBj6rl-YLrTD56UX4z7RjGE0o1P9gylY6JI7Ss5MOvNr2ihI5yudHyY3CB55xBpoFKDUnRTcucnw9mSUYyih_CalWJK5Wio_j2_x_2-SeXY-3iGR_7nl-r3dT-ozB0wUcLLPTmwVzkuPWkE8OPSUA4Ho3mWjkQdfT-15qrdlhk0Qko0I5svdH4tbukll2Ww_6MAyvcPTBn1bF1o_Oex8tZD9Kaz"/>
+</div>
+</div>
+<p class="text-[12px] text-muted-text mt-2.5 text-center font-medium">
+        HEPA air-filtered • Sanitized with child-safe plant botanicals
+      </p>
+</div>
+</div>
+<!-- What Parents Need to Know (Preparation Card) -->
+<div class="px-4 mt-6">
+<div class="bg-accent-sunshine/40 border border-accent-sunshine rounded-card p-4">
+<div class="flex items-center gap-2 text-accent-sunshine-foreground mb-1">
+<span class="material-symbols-outlined text-[20px]">info</span>
+<h3 class="text-[15px] font-bold text-on-surface">What Parents Need to Know</h3>
+</div>
+<p class="text-[13px] text-on-surface leading-relaxed mt-1">
+        Wear clothes you don't mind getting a little messy; organic linen aprons are provided. Slipper socks or bare feet are requested in the studio to protect our soft floors.
+      </p>
+<div class="mt-3 pt-2 border-t border-accent-sunshine/60 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="text-[12px] font-semibold text-on-surface">Nut-free facility</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="text-[12px] font-semibold text-on-surface">Stroller parking ready</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Host Guide Bio Section -->
+<div class="px-4 mt-6">
+<h3 class="text-[16px] font-bold text-on-surface mb-2">Your Studio Host</h3>
+<div class="bg-surface-card rounded-card p-4 shadow-sm border border-border-subtle flex items-center gap-3">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-full object-cover shadow-xs border border-border-subtle" data-alt="A warm and friendly portrait of Miss Clara, a certified early childhood educator with kind eyes, wearing a simple linen smock in a brightly lit, modern wood-accented nursery classroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPV0NVgV3xGTELljUSCvZodAlOhK8G_fbOAI3NofqLptmGuUhjNwP7JOKEW8z5iHqWcCwPdB9--Su4BJuhCNEBQdgqHVC7wTLyhoIhmohggQs4325PHlkS5WYqlfWztKn1GY9TIgzccVuNvryosD830H7cXq6CrQsBORpPkY04p5yJWm6jigC1W3il634yK3PihzVfZthdnGzdJOvZ1a-j7aM0Ue_4xHQXfHC64_0bTLu34YnKNXeA"/>
+<span class="absolute -bottom-1 -right-1 bg-primary text-on-primary w-6 h-6 rounded-full flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="text-[15px] font-bold text-on-surface">Miss Clara, M.Ed</h4>
+<p class="text-[12px] font-semibold text-primary mt-0.5 leading-snug">
+          Certified Early Childhood Sensory Specialist
+        </p>
+<p class="text-[12px] text-muted-text mt-1 line-clamp-2 leading-relaxed">
+          Specializing in gentle developmental regulation and tactile milestone integration for 8+ years.
+        </p>
+</div>
+</div>
+</div>
+<!-- Community Testimonial Highlight -->
+<div class="px-4 mt-6 mb-4">
+<div class="bg-surface-card rounded-card p-4 border border-border-subtle">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[13px] font-bold text-on-surface">From Maya's Dad (Leo, 22 mos)</span>
+<div class="flex items-center gap-0.5 text-accent-sunshine-foreground">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-[13px] text-muted-text italic leading-relaxed">
+        "Leo was hesitant with squishy materials before Miss Clara's lab. The gentle pacing made him feel so safe—he was giggling by station two."
+      </p>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar (Fixed Ergonomic Thumb Zone) -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-xl border-t border-border-subtle shadow-lg pb-safe">
+<div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="text-[11px] font-medium text-muted-text">Experience Fee</span>
+<div class="flex items-baseline gap-1">
+<span class="text-[22px] font-bold text-on-surface leading-tight">$24</span>
+<span class="text-[12px] text-muted-text font-normal">/ child</span>
+</div>
+</div>
+<button class="flex-1 bg-primary text-on-primary hover:bg-primary-hover min-h-[48px] rounded-btn font-semibold text-[15px] flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all" id="btn-select-timeslot">
+<span>Select Child &amp; Slot</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction handlers for Bookmark toggle & CTA click state
+  (function() {
+    const bookmarkBtn = document.getElementById('btn-bookmark');
+    const bookmarkIcon = document.getElementById('bookmark-icon');
+    let isSaved = false;
+
+    if (bookmarkBtn && bookmarkIcon) {
+      bookmarkBtn.addEventListener('click', function() {
+        isSaved = !isSaved;
+        if (isSaved) {
+          bookmarkIcon.textContent = 'bookmark';
+          bookmarkIcon.style.fontVariationSettings = "'FILL' 1";
+          bookmarkBtn.classList.add('text-primary');
+        } else {
+          bookmarkIcon.textContent = 'bookmark_border';
+          bookmarkIcon.style.fontVariationSettings = "'FILL' 0";
+          bookmarkBtn.classList.remove('text-primary');
+        }
+      });
+    }
+
+    const shareBtn = document.getElementById('btn-share');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', function() {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Little Explorers: Forest Sensory Lab',
+            text: 'Check out this sensory play session on PlayNest!',
+            url: window.location.href,
+          }).catch(function() {});
+        } else {
+          const originalContent = shareBtn.innerHTML;
+          shareBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">done</span>';
+          setTimeout(function() {
+            shareBtn.innerHTML = originalContent;
+          }, 1500);
+        }
+      });
+    }
+
+    const ctaBtn = document.getElementById('btn-select-timeslot');
+    if (ctaBtn) {
+      ctaBtn.addEventListener('click', function() {
+        ctaBtn.classList.add('opacity-90');
+        setTimeout(function() {
+          ctaBtn.classList.remove('opacity-90');
+        }, 300);
+      });
+    }
+  })();
+</script></main></body></html>

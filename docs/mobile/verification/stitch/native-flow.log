@@ -1,0 +1,17 @@
+Captured home
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured activities
+Captured activities-filtered
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured activity-detail
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured child-and-session
+Captured review
+Captured confirmation
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Captured bookings
+Traceback (most recent call last):
+  File "/Users/johnmarkenriquez/Project/Personal/playnest/scripts/verify-stitch-android.py", line 68, in <module>
+    assert new_reference in tree(), 'Reservation should survive a full app restart'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Reservation should survive a full app restart

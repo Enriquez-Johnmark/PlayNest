@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>PlayNest - Booking Checkout</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "border-subtle": "#EBE4DE",
+          "on-primary": "#ffffff",
+          "on-tertiary-container": "#f7feff",
+          "on-secondary-fixed": "#0f1e1e",
+          "on-tertiary": "#ffffff",
+          "on-error-container": "#93000a",
+          "tertiary": "#006670",
+          "on-surface-variant": "#59413c",
+          "on-tertiary-fixed": "#001f23",
+          "on-surface": "#231a15",
+          "surface-bright": "#fff8f6",
+          "accent-sunshine-foreground": "#764D18",
+          "on-secondary-fixed-variant": "#3a4a49",
+          "outline-variant": "#e1bfb8",
+          "secondary-foreground": "#215956",
+          "primary-fixed": "#ffdad3",
+          "on-background": "#231a15",
+          "background": "#FCFAF7",
+          "inverse-on-surface": "#ffede6",
+          "primary-fixed-dim": "#ffb4a4",
+          "on-primary-fixed": "#3e0500",
+          "error": "#ba1a1a",
+          "on-primary-fixed-variant": "#8c1802",
+          "surface-card": "#FFFFFF",
+          "surface-container-lowest": "#ffffff",
+          "semantic-destructive": "#DC3535",
+          "surface-base": "#FCFAF7",
+          "accent-sunshine": "#FDF1D0",
+          "tertiary-fixed-dim": "#63d6e6",
+          "primary": "#ee5e41",
+          "primary-dark": "#d94d30",
+          "semantic-info": "#2984DF",
+          "on-secondary-container": "#1d5854",
+          "surface-dim": "#e9d6ce",
+          "surface-variant": "#f1dfd7",
+          "secondary-container": "#d5e6e5",
+          "tertiary-container": "#00818d",
+          "on-error": "#ffffff",
+          "on-primary-container": "#fffbff",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#92f1ff",
+          "surface-container": "#f8f3ee",
+          "surface-container-highest": "#f1dfd7",
+          "secondary": "#526161",
+          "muted-surface": "#F6F3F0",
+          "inverse-primary": "#ffb4a4",
+          "surface-container-low": "#faf6f2",
+          "secondary-fixed": "#d5e6e5",
+          "semantic-warning": "#F59E0B",
+          "secondary-fixed-dim": "#b9cac9",
+          "inverse-surface": "#392e29",
+          "surface-tint": "#ee5e41",
+          "primary-container": "#ff7c62",
+          "on-secondary": "#ffffff",
+          "surface-container-high": "#f4ede6",
+          "semantic-success": "#33A364",
+          "surface": "#FCFAF7",
+          "on-tertiary-fixed-variant": "#004f57",
+          "outline": "#8d716b",
+          "muted-text": "#7C736E"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "2xl": "1rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-8": "2rem",
+          "space-6": "1.5rem",
+          "space-10": "2.5rem",
+          "space-1": "0.25rem",
+          "space-4": "1rem",
+          "space-5": "1.25rem",
+          "space-2": "0.5rem",
+          "space-3": "0.75rem"
+        },
+        "fontFamily": {
+          "sans": ["Plus Jakarta Sans", "sans-serif"],
+          "body": ["Plus Jakarta Sans", "sans-serif"],
+          "headline": ["Plus Jakarta Sans", "sans-serif"]
+        }
+      }
+    }
+  };
+</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style></head><body class="bg-[#FCFAF7] text-[#231a15] antialiased min-h-screen flex flex-col font-sans"><header class="fixed top-0 w-full z-50 pt-safe bg-[#FCFAF7]/90 backdrop-blur-xl border-b border-[#EBE4DE]"><div class="h-16 px-4 flex items-center justify-between max-w-lg mx-auto"><div class="flex items-center gap-2"><button aria-label="Go back" class="w-10 h-10 rounded-full flex items-center justify-center text-[#59413c] hover:bg-[#EBE4DE]/40 transition-colors active:scale-95" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="PlayNest Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WNKXejZTNuIkQS3ukkAhv0lF5PfNAaF7_F8g1eqJE7c5dXCmOLVOOhkgtnau8DMmB_n384_j4qUzSDHSQ1wcm_4sYBu-egs-2OMPRq8aFOpFnJihAd6NfOo3HryklptcmTWTKN3vjunxgN6jJLUD2pJTwjHPPb7q13Ds8YHWnhMcC4Q7iLsHD2n8ri7u_1B7IODfq-T8OwkR7OP55t7P1lQfSJo9HXTvlMO-c34vJDFuG1xrDJSkS5OUE"/><h1 class="text-[17px] font-semibold text-[#231a15] tracking-tight line-clamp-1 ml-1">Booking Checkout</h1></div><div class="flex items-center gap-2"><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-[#59413c] hover:bg-[#EBE4DE]/40 transition-colors active:scale-95"><span class="material-symbols-outlined text-[20px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-[#EBE4DE]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqdS4NP277pSnv8QajX3LfvcZaw4iZOepNG0dcNCwHlUgalzFJnfKGtr9ZUGUAIN2cviwj6PUzDtGlGa_7-FkO8WYfFD9-GS9ZmeHso1qA3fasmMIyqRMT7NWrZ1i3VgxHJ2FSNItmUiG4TvfSZkSm74RQZMi8ZJ4lstu7LPlCuc33T-ujnupU4MvI4QcPcR9ok33_dYwNwptEvXmJm_mBeP-hYPmLzDrlWZ3ZOE_fK-Xg5d_jz4Cy"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-[#FCFAF7]"><div class="flex flex-col w-full pb-8">
+<div class="px-4 pt-3 pb-6 flex flex-col gap-5 max-w-lg mx-auto w-full">
+<!-- Activity Summary Card (16px rounded, pure white, subtle border) -->
+<div class="relative overflow-hidden rounded-[16px] bg-white border border-[#EBE4DE] shadow-xs">
+<div class="flex flex-col">
+<div class="w-full h-40 relative overflow-hidden bg-[#F6F3F0]">
+<img class="w-full h-full object-cover" data-alt="Close up of toddler hands gently playing with natural pinecones, sensory moss, and smooth river stones in a warm Scandinavian daylight studio with soft sage accents and wooden trays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmOIfhGaR1HH8Y2rit5hZIh3HJxO2xHzUsgJIj3sBVAOYR5fxnP7aAAbHxbNU8mGyimo8oLZjIyZmazNb-z8V2IFcwfM3emZZyxhM6DIZkuhH6airoxqC39ohpg6FSznlQZX66oLmhkdd6z2bUL0VviTNS3qTsWQJkXzdqYG5_3yLjsFfMcR7ph750SzyeBnQbgglrFn0_lT_gELfM3YGnxA-rHXZkMeh2D5rZq8DIWVpv7kQyV9Nw"/>
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm border border-[#EBE4DE]/80">
+<span class="material-symbols-outlined text-[15px] text-[#ee5e41]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-[#231a15]">Sensory &amp; Nature</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-[#ee5e41]">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="text-xs font-semibold tracking-wide">The Willow Studio • Room 2B</span>
+</div>
+<h2 class="text-lg font-bold text-[#231a15] tracking-tight leading-snug">Little Explorers: Forest Sensory Lab</h2>
+</div>
+<div class="flex flex-wrap items-center gap-y-1.5 gap-x-4 pt-1 border-t border-[#EBE4DE]/60 text-[#59413c]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#ee5e41]">calendar_today</span>
+<span class="text-sm font-semibold text-[#231a15]">Sat, Oct 14</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#ee5e41]">schedule</span>
+<span class="text-sm font-semibold text-[#231a15]" id="summary-time">10:30 AM – 11:30 AM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Select Attending Child Section -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-bold text-[#231a15] flex items-center gap-2">
+<span>Select Attending Child</span>
+<span class="w-2 h-2 rounded-full bg-[#ee5e41]"></span>
+</h3>
+<span class="text-xs font-medium text-[#7C736E]">Max 2 per guardian</span>
+</div>
+<div class="flex flex-col gap-2.5" id="child-selection-group">
+<!-- Leo (Selected) -->
+<label class="relative flex items-center justify-between p-3.5 rounded-[16px] bg-white border-2 border-[#ee5e41] shadow-xs cursor-pointer transition-all duration-200 select-none" id="child-card-leo" onclick="toggleChild('leo')">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative flex-shrink-0">
+<div class="w-12 h-12 rounded-full bg-[#ffdad3] flex items-center justify-center text-[#8c1802] font-bold text-lg">
+                L
+              </div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#ee5e41] text-white flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">cruelty_free</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="text-sm font-bold text-[#231a15] truncate">Leo</span>
+<span class="text-xs text-[#7C736E] font-normal">(3 years old)</span>
+</div>
+<div class="flex items-center gap-1 mt-1">
+<!-- Soft teal secondary eligibility pill -->
+<span class="px-2.5 py-0.5 rounded-full bg-[#d5e6e5] text-[#1d5854] text-[11px] font-semibold">
+                  Eligible (18m – 3y)
+                </span>
+</div>
+</div>
+</div>
+<!-- Warm coral primary checkmark -->
+<div class="w-7 h-7 rounded-full bg-[#ee5e41] text-white flex items-center justify-center flex-shrink-0 shadow-xs transition-transform transform scale-100" id="check-leo">
+<span class="material-symbols-outlined text-[18px] font-bold">check</span>
+</div>
+</label>
+<!-- Maya (Unselected) -->
+<label class="relative flex items-center justify-between p-3.5 rounded-[16px] bg-white border border-[#EBE4DE] shadow-xs cursor-pointer transition-all duration-200 select-none opacity-85 hover:opacity-100" id="child-card-maya" onclick="toggleChild('maya')">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative flex-shrink-0">
+<div class="w-12 h-12 rounded-full bg-[#f4ede6] flex items-center justify-center text-[#59413c] font-bold text-lg">
+                M
+              </div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#d5e6e5] text-[#1d5854] flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">potted_plant</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="text-sm font-bold text-[#231a15] truncate">Maya</span>
+<span class="text-xs text-[#7C736E] font-normal">(18 months old)</span>
+</div>
+<div class="flex items-center gap-1 mt-1">
+<!-- Soft teal secondary eligibility pill -->
+<span class="px-2.5 py-0.5 rounded-full bg-[#d5e6e5] text-[#1d5854] text-[11px] font-semibold">
+                  Eligible (18m – 3y)
+                </span>
+</div>
+</div>
+</div>
+<div class="w-7 h-7 rounded-full bg-[#F6F3F0] text-transparent border border-[#EBE4DE] flex items-center justify-center flex-shrink-0 transition-transform transform scale-95" id="check-maya">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</label>
+<!-- Add child button (min height 48dp, radius 12px) -->
+<button class="w-full min-h-[48px] py-3 px-4 rounded-[12px] bg-white hover:bg-[#fff1eb] text-[#ee5e41] border border-dashed border-[#ee5e41]/60 font-semibold text-sm flex items-center justify-center gap-2 active:scale-98 transition-all" onclick="openAddChildPrompt()" type="button">
+<span class="w-5 h-5 rounded-full bg-[#ffdad3] flex items-center justify-center text-[#8c1802]">
+<span class="material-symbols-outlined text-[16px] font-bold">add</span>
+</span>
+<span>+ Add another child</span>
+</button>
+</div>
+</div>
+<!-- Available Sessions Slots -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-bold text-[#231a15]">Available Sessions</h3>
+<span class="text-xs font-semibold text-[#ee5e41]">Local Studio Time</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="slot-options">
+<!-- 10:30 AM Selected (Warm Coral accent boundary/fill) -->
+<button class="slot-btn relative p-3.5 rounded-[16px] text-left bg-[#ee5e41] text-white border-2 border-[#ee5e41] shadow-xs flex flex-col justify-between gap-2 transition-all" data-remaining="3 spots left" data-slot="10:30 AM" onclick="selectSlot(this)" type="button">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold tracking-tight">10:30 AM</span>
+<!-- Sunshine/cream accent remaining spot chip -->
+<span class="slot-pill px-2.5 py-0.5 rounded-full bg-[#FDF1D0] text-[#764D18] text-[11px] font-bold shadow-xs">
+              3 spots left
+            </span>
+</div>
+<span class="text-xs text-white/90">60 mins • Gentle Start</span>
+</button>
+<!-- 1:00 PM Slot -->
+<button class="slot-btn relative p-3.5 rounded-[16px] text-left bg-white text-[#231a15] border border-[#EBE4DE] shadow-xs flex flex-col justify-between gap-2 transition-all hover:border-[#ee5e41]/50" data-remaining="5 spots left" data-slot="1:00 PM" onclick="selectSlot(this)" type="button">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold tracking-tight">1:00 PM</span>
+<!-- Sunshine/cream accent remaining spot chip -->
+<span class="slot-pill px-2.5 py-0.5 rounded-full bg-[#FDF1D0] text-[#764D18] text-[11px] font-bold">
+              5 spots left
+            </span>
+</div>
+<span class="text-xs text-[#7C736E]">60 mins • Daylight Play</span>
+</button>
+<!-- 3:30 PM Slot -->
+<button class="slot-btn relative p-3.5 rounded-[16px] text-left bg-white text-[#231a15] border border-[#EBE4DE] shadow-xs flex flex-col justify-between gap-2 transition-all hover:border-[#ee5e41]/50" data-remaining="2 spots left" data-slot="3:30 PM" onclick="selectSlot(this)" type="button">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold tracking-tight">3:30 PM</span>
+<!-- Sunshine/cream accent remaining spot chip -->
+<span class="slot-pill px-2.5 py-0.5 rounded-full bg-[#FDF1D0] text-[#764D18] text-[11px] font-bold">
+              2 spots left
+            </span>
+</div>
+<span class="text-xs text-[#7C736E]">60 mins • Wind Down</span>
+</button>
+</div>
+</div>
+<!-- Accommodations & Care Details -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-[#231a15] flex items-center justify-between" for="accommodations">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#ee5e41]">spa</span>
+<span>Accommodations &amp; Care Details</span>
+</span>
+<span class="text-xs text-[#7C736E] font-normal">Optional</span>
+</label>
+<div class="relative">
+<textarea class="w-full rounded-[16px] bg-white border border-[#EBE4DE] p-3.5 text-sm text-[#231a15] placeholder:text-[#8d716b]/70 focus:outline-none focus:border-[#ee5e41] focus:ring-2 focus:ring-[#ee5e41]/20 transition-all resize-none shadow-xs" id="accommodations" placeholder="e.g., Sensitive to loud sounds, strawberry allergy, prefers low-light corners..." rows="3"></textarea>
+<div class="absolute bottom-3 right-3 text-[#7C736E] flex items-center gap-1 pointer-events-none">
+<span class="material-symbols-outlined text-[16px]">sentiment_satisfied</span>
+</div>
+</div>
+<p class="text-xs text-[#7C736E] px-1">
+        Our guides review dietary and sensory notes 30 minutes before arrival.
+      </p>
+</div>
+<!-- Order Summary Table (16px cards, pure white, subtle border) -->
+<div class="p-4 rounded-[16px] bg-white border border-[#EBE4DE] flex flex-col gap-3 shadow-xs">
+<div class="flex items-center justify-between pb-2 border-b border-[#EBE4DE]/80">
+<span class="text-sm font-bold text-[#231a15]">Order Summary</span>
+<span class="text-xs text-[#ee5e41] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+          Encrypted Booking
+        </span>
+</div>
+<div class="flex flex-col gap-2.5 text-xs text-[#59413c]">
+<div class="flex justify-between items-center">
+<span class="text-sm font-medium text-[#231a15]" id="child-fee-label">Session Fee (1 Explorer)</span>
+<span class="text-sm font-bold text-[#231a15]" id="child-fee-amount">$24.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-1">
+            Organic tactile kit &amp; materials
+            <span class="material-symbols-outlined text-[14px] text-[#ee5e41]" title="Complimentary nontoxic clay &amp; wooden tools">info</span>
+</span>
+<span class="text-[#1d5854] font-semibold bg-[#d5e6e5] px-2 py-0.5 rounded-full">Included</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Studio environmental sanitization</span>
+<span class="text-[#1d5854] font-semibold">$0.00</span>
+</div>
+</div>
+<div class="pt-2.5 mt-1 flex justify-between items-baseline bg-[#FCFAF7] border border-[#EBE4DE] p-3 rounded-[12px]">
+<div class="flex flex-col">
+<span class="text-sm font-bold text-[#231a15]">Total Due</span>
+<span class="text-[11px] text-[#7C736E]">Taxes included</span>
+</div>
+<div class="text-xl font-bold text-[#ee5e41] tracking-tight" id="total-price-display">
+          $24.00
+        </div>
+</div>
+</div>
+<!-- PlayNest CalmMind Guarantee Card (16px, subtle border) -->
+<div class="p-4 rounded-[16px] bg-[#fff1eb] border border-[#ffdad3] flex items-start gap-3 shadow-xs">
+<div class="w-8 h-8 rounded-full bg-[#ffdad3] flex items-center justify-center flex-shrink-0 text-[#ee5e41] mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-sm font-bold text-[#8c1802]">PlayNest CalmMind Guarantee</span>
+<p class="text-xs text-[#59413c] leading-relaxed">
+          Free full refund cancellation up to 2 hours before the session. If your child naps through or feels under the weather, reschedule in one tap.
+        </p>
+</div>
+</div>
+</div>
+<!-- Sticky bottom Primary CTA Button (Warm coral #ee5e41, min height 48dp, radius 12px) -->
+<div class="sticky bottom-0 w-full bg-white/95 backdrop-blur-md px-4 py-3 border-t border-[#EBE4DE] shadow-[0_-6px_20px_rgba(0,0,0,0.05)] z-40">
+<div class="max-w-lg mx-auto flex flex-col gap-2">
+<button class="w-full min-h-[48px] py-3.5 px-5 rounded-[12px] bg-[#ee5e41] hover:bg-[#d94d30] text-white font-bold text-sm flex items-center justify-between shadow-md active:scale-98 transition-all" id="submit-reserve-btn" onclick="handleReservation()" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span id="btn-text">Confirm &amp; Reserve</span>
+</div>
+<div class="flex items-center gap-1.5 text-base font-bold">
+<span id="btn-price">• $24.00</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-[#7C736E]">
+<span class="material-symbols-outlined text-[14px] text-[#ee5e41]">security</span>
+<span class="text-[11px] font-medium">Free cancellation up to 2 hours before • No upfront penalty</span>
+</div>
+</div>
+</div>
+<!-- Toast alert -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transform -translate-y-8 opacity-0 pointer-events-none transition-all duration-300" id="toast">
+<div class="px-5 py-3 rounded-full bg-[#231a15] text-white shadow-xl flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-[#ffdad3]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-semibold" id="toast-message">Spot reserved for Leo!</span>
+</div>
+</div>
+</div>
+<script>
+  const state = {
+    selectedChildren: new Set(['leo']),
+    selectedSlot: '10:30 AM',
+    feePerChild: 24.00
+  };
+
+  function updatePricing() {
+    const count = state.selectedChildren.size;
+    const total = count * state.feePerChild;
+    const formattedTotal = `$${total.toFixed(2)}`;
+
+    const feeLabel = document.getElementById('child-fee-label');
+    const feeAmount = document.getElementById('child-fee-amount');
+    const totalDisplay = document.getElementById('total-price-display');
+    const btnPrice = document.getElementById('btn-price');
+    const submitBtn = document.getElementById('submit-reserve-btn');
+
+    if (count === 0) {
+      feeLabel.textContent = 'No Explorer Selected';
+      feeAmount.textContent = '$0.00';
+      totalDisplay.textContent = '$0.00';
+      btnPrice.textContent = '• $0.00';
+      submitBtn.classList.add('opacity-50', 'pointer-events-none');
+    } else {
+      submitBtn.classList.remove('opacity-50', 'pointer-events-none');
+      feeLabel.textContent = `Session Fee (${count} ${count > 1 ? 'Explorers' : 'Explorer'})`;
+      feeAmount.textContent = formattedTotal;
+      totalDisplay.textContent = formattedTotal;
+      btnPrice.textContent = `• ${formattedTotal}`;
+    }
+  }
+
+  function toggleChild(id) {
+    const card = document.getElementById(`child-card-${id}`);
+    const check = document.getElementById(`check-${id}`);
+
+    if (state.selectedChildren.has(id)) {
+      if (state.selectedChildren.size === 1) {
+        showToast('At least one attending child is required.');
+        return;
+      }
+      state.selectedChildren.delete(id);
+      card.className = 'relative flex items-center justify-between p-3.5 rounded-[16px] bg-white border border-[#EBE4DE] shadow-xs cursor-pointer transition-all duration-200 select-none opacity-85 hover:opacity-100';
+      check.className = 'w-7 h-7 rounded-full bg-[#F6F3F0] text-transparent border border-[#EBE4DE] flex items-center justify-center flex-shrink-0 transition-transform transform scale-95';
+    } else {
+      state.selectedChildren.add(id);
+      card.className = 'relative flex items-center justify-between p-3.5 rounded-[16px] bg-white border-2 border-[#ee5e41] shadow-xs cursor-pointer transition-all duration-200 select-none';
+      check.className = 'w-7 h-7 rounded-full bg-[#ee5e41] text-white flex items-center justify-center flex-shrink-0 shadow-xs transition-transform transform scale-100';
+    }
+
+    updatePricing();
+  }
+
+  function selectSlot(btn) {
+    const allBtns = document.querySelectorAll('.slot-btn');
+    allBtns.forEach(b => {
+      b.className = 'slot-btn relative p-3.5 rounded-[16px] text-left bg-white text-[#231a15] border border-[#EBE4DE] shadow-xs flex flex-col justify-between gap-2 transition-all hover:border-[#ee5e41]/50';
+      const desc = b.querySelector('span.text-xs');
+      if (desc) {
+        desc.className = 'text-xs text-[#7C736E]';
+      }
+    });
+
+    btn.className = 'slot-btn relative p-3.5 rounded-[16px] text-left bg-[#ee5e41] text-white border-2 border-[#ee5e41] shadow-xs flex flex-col justify-between gap-2 transition-all';
+    const activeDesc = btn.querySelector('span.text-xs');
+    if (activeDesc) {
+      activeDesc.className = 'text-xs text-white/90';
+    }
+
+    const chosenSlot = btn.getAttribute('data-slot');
+    state.selectedSlot = chosenSlot;
+
+    let endSlot = '11:30 AM';
+    if (chosenSlot.includes('1:00')) endSlot = '2:00 PM';
+    if (chosenSlot.includes('3:30')) endSlot = '4:30 PM';
+
+    document.getElementById('summary-time').textContent = `${chosenSlot} – ${endSlot}`;
+  }
+
+  function openAddChildPrompt() {
+    showToast('Add child modal opens here.');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.textContent = msg;
+    toast.classList.remove('opacity-0', '-translate-y-8', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-8', 'pointer-events-none');
+    }, 2400);
+  }
+
+  function handleReservation() {
+    const submitBtn = document.getElementById('submit-reserve-btn');
+    submitBtn.classList.add('scale-95');
+    setTimeout(() => submitBtn.classList.remove('scale-95'), 150);
+
+    const names = Array.from(state.selectedChildren)
+      .map(c => c.charAt(0).toUpperCase() + c.slice(1))
+      .join(' & ');
+
+    showToast(`Confirmed for ${names} at ${state.selectedSlot}!`);
+  }
+
+  updatePricing();
+</script></main></body></html>
